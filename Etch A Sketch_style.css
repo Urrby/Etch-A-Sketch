@@ -24,6 +24,10 @@ body{
     border: solid black 1px;
 }
 
+#canvas:hover{
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>✍️</text></svg>") 0 25, auto;
+}
+
 .toolbar{
     padding: 30px 0;
     display: grid;
@@ -47,6 +51,16 @@ input[type="radio"]{
     border: solid white 1px;
     box-shadow: 1px 1px 2px black;
     margin-left: 5px;
+    outline: none;
+}
+
+.btn:active {
+    box-shadow: 2px 2px 3px black;
+    transform: translateY(1px);
+}
+
+.active{
+    border: red solid 1px;
 }
 
 .utility{
@@ -74,7 +88,7 @@ input[type="radio"]{
     background-color: rgba(204, 199, 51, 1);
 }
 
-#btn_erase{
+#btn_erase, #btn_download{
     background-color: rgba(240, 240, 240, 1);
     width: 70px;
     color: black;
